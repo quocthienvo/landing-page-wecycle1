@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>WeCycle</title>
+	<link rel="stylesheet" href="styles/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/98d63c299e.js" crossorigin="anonymous"></script>
+<link rel="icon" href="images/logo.png">
+</head>
+<body>
+<!-- Nav Bar -->
+<div class="navbar">
+	<img src="images/logo.png" alt="logo">
+	<ul>
+	<a href="" style="color: white;">Home Page</a>
+	</ul>
+	<ul>
+		<li>
+		<a href="" style="color: white;" class="ourservices">Our Services</a>
+			<ul>
+        <li><a href=""> An anwswer for the environment</a></li>
+        <li><a href="">Subscription</a></li>
+        <li><a href="">Referral Program</a></li>
+			</ul>
+		</li>
+	</ul>
+	<ul>
+	<a href="contact.html">Contact</a>
+</ul>
+</div>
+<!-- banner -->
+<div class="banner">
+	<h1>You Ride, We Secure.</h1>
+	<h2>WeCycle in Bordeaux.</h2>
+	<a href="@" target="_blank" class="button">Apply Now</a>
+</div>
+
+
+<!-- cards -->
+<div style="font-family: outfit;">
+	<h2> Discover our products</h2>
+</div>
+
+<div class="cards">
+	<div class="card">	
+		<img src="images/conteneur.jpg" alt="conteneur">
+		<h3> Shanghai</h3>
+		<p> Learn to ride w/ us </p>
+	</div>
+	<div class="card">
+		<img src="images/smartphimg.jpg" alt="smartphone">
+		<h3> Paris</h3>
+		<p>Learn to ride w/ us</p>
+	</div>
+	<div class="card">
+		<img src="images/cadenaimg.jpg" alt="conteneur">
+		<h3> NYC</h3>
+		<p>Learn to ride w/ us</p>
+	</div>	
+</div>	
+
+<!-- slideshow -->
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 4</div>
+    <img src="images/happy.jpg" style="width:100%">
+    <div class="text">I started to get deeply involved into the cryptographic world since the start of the year 2021.</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 4</div>
+    <img src="images/happy.jpg" style="width:100%">
+    <div class="text">As far as I can remember, I always loved space. Especially since Elon Musk started SpaceX. He's by far, one of my best idol. </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 4</div>
+    <img src="images/happy.jpg" style="width:100%">
+    <div class="text">I cannot avoid mentionning that I'm an Apple Nerdy Sheep and Apple's Church fervent Believer.</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 4</div>
+    <img src="images/happy.jpg" style="width:100%">
+    <div class="text">Joke aside, I'm also a fashion lover. I'm an Ambassador of Lacoste. Daring, Inventiveness, Elegance and Tenacity. </div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+
+
+
+<!-- button-->
+<div class="btnform" style="text-align:center;padding: 50px;">
+	<button data-tf-popup="hqU9zCc6" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#0445AF;color:#FFFFFF;font-size:20px;border-radius:25px;padding:0 33px;font-weight:bold;height:50px;cursor:pointer;line-height:50px;text-align:center;margin:0;text-decoration:none;">Contact us</button><script src="//embed.typeform.com/next/embed.js"></script>
+</div>
+
+
+<!-- footer -->
+<div class="footer" style="font-family:'Outfit', sans-serif;">
+	<p> Please contact us @facebook @instagram</p>
+</div>
+
+<!-- Code pour slideshow -->
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+
+</body>
+</html>

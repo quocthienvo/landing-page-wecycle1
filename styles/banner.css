@@ -1,0 +1,22 @@
+.banner{
+background-image:radial-gradient(circle, rgba(238,174,202,0) 1%, rgba(148,187,233,0.18671218487394958) 89%), url("../images/testimg.jpg");
+height: 90vh;
+background-size: cover;
+background-position: top;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.banner > h1 {
+	font-family: 'Outfit', sans-serif;
+	margin: 0;
+	color: white;
+	background-color: #00c2cb;
+}
+
+.banner h2 {
+	font-family: 'Outfit', sans-serif;
+	color: white;
+	background-color: #00c2cb;

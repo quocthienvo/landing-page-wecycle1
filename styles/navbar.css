@@ -1,0 +1,36 @@
+.navbar {
+    background-color: #00c2cb;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    font-family:'Outfit', sans-serif;
+    font-weight: bolder;
+}
+.navbar img{
+    width: 75px;
+}
+.ourservices{
+
+}
+ul {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+ul li {display: inline-block;}
+ul li:hover {background: #00c2cb;}
+ul li:hover ul {display: block;}
+ul li ul {
+  position: absolute;
+  width: 280px;
+  display: none;
+}
+ul li ul li { 
+  background: #00c2cb; 
+  display: block; 
+}
+ul li ul li a {display:block !important;} 
+ul li ul li:hover {background: #666;}
